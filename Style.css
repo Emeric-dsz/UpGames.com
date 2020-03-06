@@ -25,7 +25,7 @@ p.title{
 	margin-top: 0;
 	margin-bottom: 10px;
 	text-align: center;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	font-size: 60px;
 	color: white;
 }
@@ -34,7 +34,7 @@ p.titleac{
 	margin-top: -20px;
 	margin-bottom: 10px;
 	text-align: center;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	font-size: 60px;
 	color: white;
 }
@@ -44,7 +44,7 @@ p.title_article{
 	margin-bottom: -30px;
 	margin-left: 40px;
 	margin-right: 40px;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	font-size: 30px;
 	color: white;
 }
@@ -102,7 +102,7 @@ a.button{
 	height: 93px;
 	display: table-cell;
     vertical-align: middle;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	color: white;
 	border-bottom-style: solid;
 	border-color: #1f2f3d;
@@ -116,10 +116,10 @@ a.button:hover{
 	height: 93px;
 	background-color: #304b62;
 	display: table-cell;
-    	vertical-align: middle;
-    	padding-left: 5px;
+    vertical-align: middle;
+    padding-left: 5px;
 	padding-right: 5px;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	color: white;
 	border-bottom-style: solid;
 	border-bottom-color: #1370c8;
@@ -131,10 +131,10 @@ a.bActive{
 	height: 93px;
 	background-color: #304b62;
 	display: table-cell;
-    	vertical-align: middle;
-    	padding-left: 5px;
+    vertical-align: middle;
+    padding-left: 5px;
 	padding-right: 5px;
-	font-family: bungee;
+	font-family: "fonts/Bunee-Regular.ttf";
 	color: white;
 	border-bottom-style: solid;
 	border-bottom-color: #1370c8;
@@ -227,7 +227,7 @@ div.article{
 	margin-bottom: -12px;
 	background-color: #506170;
 	margin-left: auto;
-    	margin-right: auto;
+    margin-right: auto;
 	max-width: 1000px;
 }
 
@@ -255,31 +255,31 @@ footer{
 .dot {
 	position: relative;
 	top: -25px;
-    	height: 15px;
-    	width: 15px;
-    	margin: 0 2px;
-    	background-color: #bbb;
-    	border-radius: 50%;
-    	display: inline-block;
-    	transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active {
-  	background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  	animation-name: reverse slidein;
-  	animation-duration: 0.1s;
+  animation-name: reverse slidein;
+  animation-duration: 0.1s;
 }
 
 @-webkit-keyframes slide {
-  	from {opacity: .1}
-  	to {opacity: 1}
+  from {opacity: .1}
+  to {opacity: 1}
 }
 
 @keyframes slide {
-  	from {opacity: .1}
-  	to {opacity: 1}
+  from {opacity: .1}
+  to {opacity: 1}
 }
