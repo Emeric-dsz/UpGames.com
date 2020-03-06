@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="Logo-head.png" />
+		<title>Up Games</title>
+		<link rel="stylesheet" href="Style.css" />
+	</head>
+
+	<body>
+
+<!----------------------Haut de page--------------------------->
+
+		<header class="logo">
+
+			<a href="Acceuil.html"><img class="logo" width="183" height="88" src="Logo-w.png" alt="texte" align="left"></a>
+
+			<p class="head">
+				<a class="bActive" href="Acceuil.html"> Acceuil </a> 
+				<a class="button" href="Projet.html"> Notre Projet </a> 
+				<a class="button" href="Actu.html"> Actualités </a>	
+				<a class="button" href="Download.html"> Télécharger </a>
+			</p>
+
+		</header>
+
+<!----------------------Corps--------------------------->
+
+		<div class="article">
+
+			<div class="slideshow" style="text-align: center">
+
+				<div class="slide fade">
+					<img height="229" width="1000" src="vapor.jpg" >
+				</div>
+
+				<div class="slide fade">
+					<img height="229" width="1000" src="vapor2.jpg" >
+				</div>
+
+				<div class="slide fade">
+					<img height="229" width="1000" src="vapor3.jpg" >
+				</div>
+
+				<div style="text-align: center">
+					<span class="dot" ></span>
+	  				<span class="dot" ></span>
+	 				<span class="dot" ></span>
+				</div>
+			</div>
+
+			<div>
+				<p class="titleac">Qui sommes nous ?</p>
+				<p class="article">Nous sommes un groupe d'étudiants à Epita, une école d'informatique, et nous suivons actuellement la formation préparatoire de l'école. Nous avons créé cette entreprise pour réalisé le projet qui nous as été demandé. Nous avons décider de nous répartir les tâches et ainsi nous nous spécialisons dans des domaines différents tels que le html/css, la modélisation 3D, le c# ou encore la création de musiques.</p>
+
+				<hr class="acceuil">
+
+				<p class="title"> Que faisons nous ? </p>
+
+				<p class="article">Comme vous pouvez l'avoir compris nous créont des jeux vidéos. En ce moment même nous sommes entrain de développer un jeu vidéo 3D, que nous avons nommé Speed Up. Nous utilisons différents logiciel pour réaliser ce jeu, comme Unity 3D, Blender ou encore Soundation.</p>
+
+				<hr class="acceuil">
+
+				<p class="title"> Nos objectifs </p>
+
+				<p class="article">Nous réalisons ce projet afin, d'en un premier temps, de développer nos capacités de développement informatique dans plusieurs languages. Nous cherchons également à améliorer nos compétence de groupe : mieux communiquer, attribuer les tâches, pour travailler plus efficacement. Et bien évidemment, nous voulons réaliser un jeu de bonne qualité qui pourras plaire à tout le monde.</p>
+
+				<p class="info"> Trouvez plus d'informations sur notre projet ici:</p>
+				<a class="button2" href="Projet.html"> Speed Up </a>
+			</div>
+
+		</div>
+
+<!----------------------Footer---------------------------->
+
+		<footer>
+			<p class="footer">Emeric Dissez | Guillaume Wantiez | Nicolas Kourban</p>
+		</footer>
+
+<!----------------------Scripts--------------------------->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("slide");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 5000); // Change image every 5 seconds
+			}
+		</script>
+
+		</div>
+
+	</body>
+
+</html>
