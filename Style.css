@@ -9,6 +9,13 @@ header.logo{
 	background-color: #1f2f3d;
 }
 
+/*********************font*******************************/
+
+@font-face{
+	font-family: bungee;
+	src: url(fonts/Bunee-Regular.ttf);
+}
+
 /********************Paragraphes**********************/
 p.section{
 	margin: 0;
@@ -25,8 +32,7 @@ p.title{
 	margin-top: 0;
 	margin-bottom: 10px;
 	text-align: center;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	font-size: 60px;
 	color: white;
 }
@@ -35,8 +41,7 @@ p.titleac{
 	margin-top: -20px;
 	margin-bottom: 10px;
 	text-align: center;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	font-size: 60px;
 	color: white;
 }
@@ -47,8 +52,7 @@ p.title_article{
 	margin-left: 40px;
 	margin-right: 40px;
 	text-align: center;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	font-size: 30px;
 	color: white;
 }
@@ -106,8 +110,7 @@ a.button{
 	height: 93px;
 	display: table-cell;
     vertical-align: middle;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	color: white;
 	border-bottom-style: solid;
 	border-color: #1f2f3d;
@@ -124,8 +127,7 @@ a.button:hover{
     vertical-align: middle;
     padding-left: 5px;
 	padding-right: 5px;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	color: white;
 	border-bottom-style: solid;
 	border-bottom-color: #1370c8;
@@ -140,8 +142,7 @@ a.bActive{
     vertical-align: middle;
     padding-left: 5px;
 	padding-right: 5px;
-	font-family: "Bungee";
-	src: url('fonts/Bunee-Regular.ttf');
+	font-family: bungee;
 	color: white;
 	border-bottom-style: solid;
 	border-bottom-color: #1370c8;
