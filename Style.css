@@ -13,7 +13,7 @@ header.logo{
 
 @font-face{
 	font-family: bungee;
-	src: url("/fonts/Bunee-Regular.ttf");
+	src: url("fonts/Bunee-Regular.ttf");
 }
 
 /********************Paragraphes**********************/
@@ -160,7 +160,7 @@ a.button2{
 	color: white;
 	border-style: solid;
 	border-radius: 10px;
-	background-color: #1370c8;
+	background-color: #1f2f3d;
 	border-color: #1f2f3d;
 	border-width: 10px;
 }
