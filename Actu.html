@@ -11,6 +11,8 @@
 
 	<body>
 
+<!----------------------Haut de page--------------------------->
+
 		<header class="logo">
 
 			<a href="index.html"><img class="logo" width="183" height="88" src="img/Logo-w.png" alt="texte" align="left"></a>
@@ -24,20 +26,62 @@
 
 		</header>
 
+<!----------------------Corps--------------------------->
+		
 		<div class="article">
 			<p class="title">Actualités</p>
 
 			<hr class="actu">
 
-			<p class="title_article">19 Décembre 2019</p>
+			<div class="post">
+				
+				<p class="title_article">Semaine du 16-22 Décembre 2019</p>
+				
+				<div class="slideshow" style="text-align: center">
 
-			<p class="articleactu">Création du Logo de l'entreprise, et du Logo du jeu Speed Up. <img class="article" src="img/Logo.png"></p>
+					<div class="slide fade">
+						<img src="img/Logo.png">
+					</div>
 
-			<p class="title_article">12 Janvier 2020</p>
+					<div class="slide fade">
+						<img src="img/overleaf.JPG">
+					</div>
 
-			<p class="articleactu">Rendu du cahier des charges présentant notre projet de S2. <img class="article" height="91.4" width="192" src="img/overleaf.JPG"></p>
+					<div style="text-align: center">
+						<span class="dot" ></span>
+						<span class="dot" ></span>
+					</div>
+				</div>
+				
+				<p class="articleactu">Création du Logo de l'entreprise, et du Logo du jeu Speed Up.</p>
+				
+				<p class="articleactu">Rendu du cahier des charges présentant notre projet de S2.</p>
+			</div>
 			
 		</div>
+		
+<!----------------------Scripts--------------------------->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("slide");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 5000); // Change image every 5 seconds
+			}
+		</script>
 
 	</body>
 
