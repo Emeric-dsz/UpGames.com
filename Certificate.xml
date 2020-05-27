@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="fr-FR" OVERALL_RESULT="WARNING" VERSION="10.0.16299.15" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Desktop" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Famille" PER_USER_APPLICATION="FALSE" PARTIAL_RUN="FALSE" LCID="1036" VALIDATION_TYPE="UI" ReportGenerationTime="27/05/2020 17:44:45" ID="0d48836897669a700888b68ecdaf32db">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Test de nouvelle installation réversible" RATIONALE="Une nouvelle installation réversible permet aux utilisateurs de gérer (déployer et supprimer) les applications installées dans leur système.">
+      <TEST INDEX="12" NAME="Supprimer tous les fichiers et dossiers non partagés" DESCRIPTION="Tous les programmes récemment installés ont été correctement supprimés." EXECUTIONTIME="00h:00m:01s.93ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="8" NAME="Ne pas imposer un redémarrage immédiat lors de l’installation" DESCRIPTION="Les utilisateurs doivent avoir la possibilité de redémarrer ultérieurement." EXECUTIONTIME="00h:00m:02s.49ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="9" NAME="Ne pas imposer un redémarrage immédiat lors de la désinstallation" DESCRIPTION="Les utilisateurs doivent avoir la possibilité de redémarrer ultérieurement." EXECUTIONTIME="00h:00m:02s.58ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="5" NAME="Écrire les valeurs Ajout/suppression de programmes appropriées" DESCRIPTION="Écrivez les valeurs Ajout/suppression de programmes appropriées." EXECUTIONTIME="00h:00m:01s.57ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="34" NAME="Vérification du registre mono-utilisateur" DESCRIPTION="Vérifie les écritures non valides dans le registre au moment de l’installation." EXECUTIONTIME="00h:00m:01s.80ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="2" TITLE="Installer dans les dossiers de test appropriés" RATIONALE="Windows fournit des emplacements spécifiques dans le système de fichiers pour le stockage des programmes et des composants logiciels, des données des applications partagées et des données des applications propres à l’utilisateur.">
+      <TEST INDEX="7" NAME="Installer dans Program Files" DESCRIPTION="Installez dans la description du dossier Program Files." EXECUTIONTIME="00h:00m:01s.89ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="3" NAME="Écrire dans %WINDIR% ou %SystemDrive%" DESCRIPTION="Écrire dans %WINDIR% ou %SystemDrive%." EXECUTIONTIME="00h:00m:01s.85ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="41" NAME="Chargement des applications au démarrage de Windows" DESCRIPTION="Chargement des applications au démarrage de Windows." EXECUTIONTIME="00h:00m:01s.22ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="3" TITLE="Test de signature numérique de fichiers" RATIONALE="Une signature numérique Authenticode garantit l’authenticité du logiciel aux utilisateurs. Cette signature permet également de détecter l’éventuelle falsification d’un fichier, par exemple s’il est infecté par un virus.">
+      <TEST INDEX="2" NAME="Installer les pilotes signés et les fichiers exécutables" DESCRIPTION="Installer les pilotes signés et les fichiers exécutables." EXECUTIONTIME="00h:00m:06s.70ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\UnityPlayer.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\UnityCrashHandler32.exe ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up.exe ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.XRModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.WindModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.VRModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.VideoModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.VFXModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.VehiclesModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityWebRequestModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityTestProtocolModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityConnectModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UnityAnalyticsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UNETModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UmbraModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UIModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UIElementsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.UI.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TLSModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TilemapModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TextRenderingModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TextCoreModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TerrainPhysicsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.TerrainModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SubsystemsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SubstanceModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.StreamingModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SpriteShapeModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SpriteMaskModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SpatialTracking.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.SharedInternalsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ScreenCaptureModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ProfilerModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.PhysicsModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.Physics2DModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.PerformanceReportingModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ParticleSystemModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.LocalizationModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.JSONSerializeModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.InputModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.InputLegacyModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.IMGUIModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ImageConversionModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.HotReloadModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.GridModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.GameCenterModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.DSPGraphModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.DirectorModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.CrashReportingModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.CoreModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ClusterRendererModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ClusterInputModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ClothModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AudioModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AssetBundleModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.ARModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AnimationModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AndroidJNIModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AIModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\UnityEngine.AccessibilityModule.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.XR.Management.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.VisualEffectGraph.Runtime.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.Timeline.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.TextMeshPro.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.Subsystem.Registration.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonWebSocket.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonUnityNetworking.Utilities.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonUnityNetworking.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonUnityNetworking.Demos.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonRealtime.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\PhotonChat.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Photon3Unity3D.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\Speed Up_Data\Managed\Assembly-CSharp.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier non-pilote C:\Program Files (x86)\Speed Up\unins000.exe ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+          <MESSAGE TEXT="Le fichier du programme d’installation principal de l’application C:\Users\riric\Desktop\Upgames.com\Install_Speed_Up.exe ne présente pas de signature valide, intégrée ou par fichier de catalogue." />
+        </MESSAGES>
+        <RESULT><![CDATA[WARNING]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="4" TITLE="Test de prise en charge de Windows x64" RATIONALE="Pour assurer la compatibilité avec les versions 64 bits de Windows, les applications doivent nécessairement prendre en charge les applications de type Windows 64 ou 32 bits au moins pour pouvoir s’exécuter en toute transparence dans un système 64 bits.">
+      <TEST INDEX="4" NAME="Installer les fichiers spécifiques à la plateforme et les pilotes" DESCRIPTION="Installer les fichiers spécifiques à la plateforme et les pilotes." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="5" TITLE="Test de vérification de la version du système d'exploitation" RATIONALE="Les applications ne doivent pas vérifier la correspondance exacte de la version (== 5.1). Si vous avez besoin d’une fonctionnalité spécifique, vérifiez sa disponibilité. Si vous avez besoin de Windows XP, vérifiez la présence de Windows XP ou d’une version ultérieure (&gt;= 5.1). Votre code de détection continuera ainsi à fonctionner avec les futures versions de Windows. Il est préférable que les programmes d’installation des pilotes et les modules de désinstallation ne vérifient pas la version du système d’exploitation.">
+      <TEST INDEX="6" NAME="Vérification de la version appropriée du système d’exploitation" DESCRIPTION="Vérifiez que la version du système d’exploitation est appropriée lors de l’installation." EXECUTIONTIME="00h:00m:02s.97ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="6" TITLE="Test de contrôle de compte utilisateur (UAC)" RATIONALE="La plupart des applications ne nécessitent pas de privilèges d’administrateur lors de l’exécution et s’exécutent généralement très bien avec un compte d’utilisateur standard. Les applications Windows ont besoin d’un fichier manifeste (intégré ou externe) qui définit leur niveau d’exécution et indique au système d’exploitation les privilèges nécessaires à leur exécution.">
+      <TEST INDEX="11" NAME="Niveau d'exécution Contrôle de compte d'utilisateur" DESCRIPTION="Les applications Windows® ont besoin d’un fichier manifeste (intégré ou externe) qui définit leur niveau d’exécution et indique au système d’exploitation les privilèges nécessaires à leur exécution." EXECUTIONTIME="00h:00m:02s.94ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="7" TITLE="Se conformer aux messages du gestionnaire de démarrage du système" RATIONALE="Lors d’une interruption critique, les applications qui renvoient FALSE à WM_QUERYENDSESSION recevront WM_ENDSESSION et seront fermées, tandis que celles qui ne répondent pas dans les temps à WM_QUERYENDSESSION seront interrompues.">
+      <TEST INDEX="1" NAME="Ne pas bloquer le redémarrage" DESCRIPTION="Ne bloquez pas le redémarrage." EXECUTIONTIME="00h:00m:32s.97ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="8" TITLE="Test du mode sans échec" RATIONALE="Par défaut, la plupart des pilotes et des services qui n’ont pas été préinstallés avec Windows ne sont pas démarrés en Mode sans échec. Ils doivent dans ce cas rester désactivés, sauf lorsque le système en a besoin pour des opérations de base, pour effectuer un diagnostic et dans l’objectif d’une récupération.">
+      <TEST INDEX="10" NAME="Ne pas charger les services et les pilotes en Mode sans échec" DESCRIPTION="Par défaut, la plupart des pilotes et des services qui n’ont pas été préinstallés avec Windows ne sont pas démarrés en Mode sans échec. Ils doivent dans ce cas rester désactivés, sauf lorsque le système en a besoin pour des opérations de base, pour effectuer un diagnostic et dans l’objectif d’une récupération." EXECUTIONTIME="00h:00m:03s.20ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="9" TITLE="Test de session multi-utilisateurs" RATIONALE="Les utilisateurs de Windows doivent pouvoir exécuter des sessions simultanées sans conflits ni interruptions.  Les applications doivent donc s’assurer que leurs fonctionnalités standard ne sont pas affectées lorsqu’elles s’exécutent dans plusieurs sessions, localement ou à distance. Les paramètres des applications et les fichiers de données ne doivent pas persister entre les différents utilisateurs. Les préférences et les données confidentielles de la session de tout utilisateur doivent être isolées.">
+      <TEST INDEX="16" NAME="Journaux de vérification multi-utilisateurs" DESCRIPTION="Journaux du programme de vérification des applications multi-utilisateurs." EXECUTIONTIME="00h:00m:01s.57ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="15" NAME="Vérification du registre multi-utilisateurs" DESCRIPTION="Vérifie les écritures non valides dans le registre au moment de l’installation." EXECUTIONTIME="00h:00m:01s.80ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="13" NAME="Ne pas écrire dans le dossier  ‘Users’" DESCRIPTION="N’écrivez pas dans le dossier ‘Users’." EXECUTIONTIME="00h:00m:01s.91ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="10" TITLE="Tests de déploiement et de lancement" RATIONALE="Les défaillances des applications, telles que les pannes et les blocages, sont pour les utilisateurs des interruptions majeures et entraînent une certaine frustration. L’élimination de ces défaillances améliore la stabilité et la fiabilité des applications et, de façon générale, renforce la satisfaction des utilisateurs.">
+      <TEST INDEX="21" NAME="Blocages et pannes" DESCRIPTION="N’installez pas les exécutables qui s’arrêtent ou se bloquent pendant le processus de test." EXECUTIONTIME="00h:00m:03s.87ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Test de compatibilité et de résilience" RATIONALE="Lorsqu’il détecte le fonctionnement non compatible d’une application, Windows applique un correctif de compatibilité pour que cette application fonctionne correctement, ce qui garantit la satisfaction de l’utilisateur. Les applications ne doivent pas compter sur ce comportement car son seul objectif est de permettre aux applications héritées de fonctionner correctement sous Windows.">
+      <TEST INDEX="22" NAME="Correctifs de compatibilité" DESCRIPTION="Correctifs de compatibilité." EXECUTIONTIME="00h:00m:01s.54ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="20" NAME="Accrochage du mode utilisateur à l'aide de AppInit_DLLs" DESCRIPTION="Accrochage du mode utilisateur à l'aide de AppInit_DLLs." EXECUTIONTIME="00h:00m:03s.35ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="64" NAME="Manifeste de compatibilité" DESCRIPTION="Les applications Windows® doivent posséder un manifeste de compatibilité permettant au système d’exploitation de fournir la prise en charge appropriée requise par l’application." EXECUTIONTIME="00h:00m:03s.10ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="14" TITLE="Test des fonctionnalités de sécurité Windows" RATIONALE="Les applications doivent respecter les fonctionnalités de sécurité de Windows.">
+      <TEST INDEX="33" NAME="Analyseur binaire" DESCRIPTION="Analyse des fonctionnalités de sécurité activées dans les binaires" EXECUTIONTIME="00h:00m:01s.76ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="Échec du fichier C:\Program Files (x86)\Speed Up\UnityPlayer.dll lors de la vérification SafeSEHCheck." />
+          <MESSAGE TEXT="Échec du fichier C:\Program Files (x86)\Speed Up\unins000.exe lors de la vérification DBCheck." />
+          <MESSAGE TEXT="Échec du fichier C:\Program Files (x86)\Speed Up\unins000.exe lors de la vérification SafeSEHCheck." />
+        </MESSAGES>
+        <RESULT><![CDATA[WARNING]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Prise en charge de la haute résolution" RATIONALE="L’application doit définir la prise en charge DPI pour que l’apparence de l’interface utilisateur soit cohérente entre de nombreux paramètres d’affichage en haute résolution.">
+      <TEST INDEX="65" NAME="Haute résolution" DESCRIPTION="Les applications Win32 doivent définir la prise en charge DPI pour que l’apparence de l’interface utilisateur soit cohérente entre de nombreux paramètres d’affichage en haute résolution." EXECUTIONTIME="00h:00m:03s.01ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="Speed Up version 2.0" Type="Application" Source="AddRemoveProgram" Publisher="UpGames" Version="2.0" Language="65535" InstallDate="05/27/2020 00:00:00" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Program Files (x86)\speed up\" Id="0000eedee1cb670ceff4748ff6c834854d870000ffff" HiddenArp="false">
+        <Indicators>
+          <AddRemoveProgramIndicators>
+            <AddRemoveProgram RegistryKeyPath="HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F554A065-6E12-430E-B9F3-560E8FF15FE1}_is1" UninstallString="&quot;C:\Program Files (x86)\Speed Up\unins000.exe&quot;" DisplayName="Speed Up version 2.0" CompanyName="UpGames" ProductVersion="2.0" ActualInstallLocation="C:\Program Files (x86)\Speed Up\" Language="65535" />
+          </AddRemoveProgramIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="00001875fdd281089197178e451cb04c2646686d0829">
+            <File Id="0000b7f88968db15b6224ee1611b5fd823cb76029744" Name="Speed Up.exe" ProductName="" CompanyName="" ProductVersion="" VerLanguage="1033" SwitchBackContext="0" FileVersion="2019.3.2.12872250" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="0" BinProductVersion="" BinFileVersion="2019.3.2.27194" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="pe32_i386" LowerCaseLongPath="C:\Program Files (x86)\speed up\speed up.exe" />
+            <File Id="000014a3d75e2999db425cae1b8e20d75c0648cb65d1" Name="unins000.exe" ProductName="" CompanyName="upgames                                                     " ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="51.1052.0.0" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="0" BinProductVersion="" BinFileVersion="51.1052.0.0" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="pe32_i386" LowerCaseLongPath="C:\Program Files (x86)\speed up\unins000.exe" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DIGITAL_SIGNING />
+  <DEPENDENCY_INFORMATION />
+</REPORT>
